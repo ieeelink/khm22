@@ -21,10 +21,10 @@
 
 /* Colors */
 :root {
-  --color-default: #0a0d13;
-  --color-primary: #0d42ff;
-  --color-secondary: #0e1d34;
-  --color-third :#406aff;
+  --color-default: #ffa800;
+  --color-primary: #fa5800;
+  --color-secondary: #000000;
+  --color-third :#ffbd0a;
 }
 
 /* Smooth scroll behavior */
@@ -38,6 +38,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  background-color: #000;
 }
 
 a {
@@ -577,7 +578,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #001f8d;
+  color: #fa5800;
   font-size: 48px;
   transition: 0.3s;
 }
@@ -636,7 +637,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   font-family: var(--font-secondary);
-  color: #001f8d;
+  color: #fa5800;
 }
 
 .about .content ul {
@@ -1999,4 +2000,18 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+@font-face {
+  font-family: 'aventurabold';
+  src:url('/assets/font/aventura-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'axisextra_bold';
+  src:url('/assets/font/axis_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
