@@ -13,3 +13,9 @@ new colors
 #ffbd0a another-yellow
 #ffffff white
 
+
+background: #fcd66e;
+background: -moz-linear-gradient(left,  #fcd66e 0%, #ffa800 27%, #fa5800 100%);
+background: -webkit-linear-gradient(left,  #fcd66e 0%,#ffa800 27%,#fa5800 100%);
+background: linear-gradient(to right,  #fcd66e 0%,#ffa800 27%,#fa5800 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd66e', endColorstr='#fa5800',GradientType=1 );
