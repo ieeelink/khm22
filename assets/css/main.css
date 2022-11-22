@@ -37,7 +37,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
+  /* color: var(--color-default); */
+  color: #fff;
   background-color: #000;
 }
 
