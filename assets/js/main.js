@@ -184,7 +184,7 @@ let countdown = select('.countdown');
              }
            },
            "color": {
-             "value": "#fa5800"
+             "value": "#ffbd0a"
            },
            "shape": {
              "type": "circle",
