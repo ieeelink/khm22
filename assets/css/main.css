@@ -159,7 +159,7 @@ section {
 
 .breadcrumbs .page-header:before {
   content: "";
-  background-color: rgba(14, 29, 52, 0.8);
+  background-color:var(--dark);
   position: absolute;
   inset: 0;
 }
