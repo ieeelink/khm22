@@ -249,7 +249,6 @@ section {
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
-  position: absolute;
   inset: 0;
   z-index: 9999;
   overflow: hidden;
@@ -267,47 +266,6 @@ section {
   /* border-radius: 50%; */
   /* -webkit-animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; */
   /* animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; */
-}
-
-#preloader:after {
-  /* -webkit-animation-delay: -0.5s; */
-  /* animation-delay: -0.5s; */
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    width: 10px;
-    height: 10px;
-    top: calc(50% - 5px);
-    left: calc(50% - 5px);
-    opacity: 1;
-  }
-
-  100% {
-    width: 72px;
-    height: 72px;
-    top: calc(50% - 36px);
-    left: calc(50% - 36px);
-    opacity: 0;
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    width: 10px;
-    height: 10px;
-    top: calc(50% - 5px);
-    left: calc(50% - 5px);
-    opacity: 1;
-  }
-
-  100% {
-    width: 72px;
-    height: 72px;
-    top: calc(50% - 36px);
-    left: calc(50% - 36px);
-    opacity: 0;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -652,10 +610,10 @@ section {
 }
 
 .about .content h3 {
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 2rem;
   font-family: var(--font-secondary);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .about .content ul {
@@ -1830,7 +1788,7 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 101vh;
+  height: 100vh;
   /* background-color: var(--color-secondary); */
   /* background-image: url("../img/hero-bg.png"); */
   /* background-size: cover; */
@@ -1855,42 +1813,6 @@ section {
   font-family: var(--font-primary);
 }
 
-
-#textanime {
-    position: absolute;
-    left: 0;
-    top: 50vh;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 80pt;
-    filter: url(#threshold) blur(0.6px);
-}
-
-#text1,
-#text2 {
-    position: absolute;
-    width: 100%;
-    color:var(--color-primary);
-    font-family: var(--font-primary);
-    font-size: 7rem;
-    text-align: center;
-    user-select: none;
-}
-
-
-@media (max-width: 575px) {
-  .hero {
-    background: var(--color-secondary);
-  }
-  .hero h2 {
-    font-size: 3rem;
-  }
-  #text1,
-#text2 {
-    font-size: 5rem;
-}
-}
-
 .hero p {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1903,39 +1825,26 @@ section {
   margin-bottom: 40px;
   font-family: var(--font-primary);
 }
+@media (max-width: 575px) {
+  .hero {
+    background: var(--color-secondary);
+  }
 
-.hero form {
-  background: var(--white);
-  padding: 10px;
-  border-radius: 10px;
+  .hero h2 {
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+  }
+
+  .hero h3 {
+    font-size: .8rem;
+    margin-bottom: 20px;
+    
+  }
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
 }
-
-.hero form .form-control {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  margin-right: 10px;
-  border: none !important;
-  background: none !important;
-}
-
-.hero form .form-control:hover,
-.hero form .form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.hero form .btn-primary {
-  background-color: var(--color-primary);
-  padding: 15px 30px;
-}
-
-.hero form .btn-primary:hover {
-  background-color: #2756ff;
-}
-
 .hero .stats-item {
   padding: 30px;
   width: 100%;
@@ -2258,7 +2167,7 @@ section {
   width: 100%;
   height: 100px;
   background: url('../img/waveYELLOW.png');
-  background-size: 1000px 100px;
+    background-size: 1000px 100px;
 }
 
 .wave#wave1 {
@@ -2289,6 +2198,9 @@ section {
   animation: animate 3s linear infinite!important;
 }
 
+.wave #wavebtn {
+  z-index: 999;
+}
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
@@ -2311,4 +2223,359 @@ section {
   position: relative;
   top: 0;
   left: 0;
+}
+
+
+/* new animation  */
+@-webkit-keyframes can {
+  0% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  33.3343333333% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  33.3363333333% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  93.3333333333% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes can {
+  0% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  33.3343333333% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  33.3363333333% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  93.3333333333% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes will {
+  0% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+
+  66.6666666667% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+
+  66.6676666667% {
+    transform: translateY(0);
+  }
+
+  66.6696666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes will {
+  0% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+
+  66.6666666667% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+
+  66.6676666667% {
+    transform: translateY(0);
+  }
+
+  66.6696666667% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes thrive {
+  0% {
+    transform: translateY(-300%);
+  }
+
+  0.0001% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+  }
+
+  66.6666666667% {
+    transform: translateY(-200%);
+  }
+
+  93.3333333333% {
+    transform: translateY(-200%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+}
+
+@keyframes thrive {
+  0% {
+    transform: translateY(-300%);
+  }
+
+  0.0001% {
+    transform: translateY(0);
+  }
+
+  26.6666666667% {
+    transform: translateY(0);
+  }
+
+  33.3333333333% {
+    transform: translateY(-100%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+  }
+
+  66.6666666667% {
+    transform: translateY(-200%);
+  }
+
+  93.3333333333% {
+    transform: translateY(-200%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+}
+
+#preloader .word {
+  display: flex;
+  color: var(--color-primary);
+  grid-column: 2;
+  grid-row: auto;
+}
+
+#preloader .word span {
+  display: inline-block;
+}
+
+#preloader .can span:nth-child(1) {
+  -webkit-animation: can 6s ease-in-out both 0.05s infinite;
+  animation: can 6s ease-in-out both 0.05s infinite;
+}
+
+#preloader .will span:nth-child(1) {
+  -webkit-animation: will 6s ease-in-out both 0.05s infinite;
+  animation: will 6s ease-in-out both 0.05s infinite;
+}
+
+#preloader .thrive span:nth-child(1) {
+  -webkit-animation: thrive 6s ease-in-out both 0.05s infinite;
+  animation: thrive 6s ease-in-out both 0.05s infinite;
+}
+
+#preloader .can span:nth-child(2) {
+  -webkit-animation: can 6s ease-in-out both 0.1s infinite;
+  animation: can 6s ease-in-out both 0.1s infinite;
+}
+
+#preloader .will span:nth-child(2) {
+  -webkit-animation: will 6s ease-in-out both 0.1s infinite;
+  animation: will 6s ease-in-out both 0.1s infinite;
+}
+
+#preloader .thrive span:nth-child(2) {
+  -webkit-animation: thrive 6s ease-in-out both 0.1s infinite;
+  animation: thrive 6s ease-in-out both 0.1s infinite;
+}
+
+#preloader .can span:nth-child(3) {
+  -webkit-animation: can 6s ease-in-out both 0.15s infinite;
+  animation: can 6s ease-in-out both 0.15s infinite;
+}
+
+#preloader .will span:nth-child(3) {
+  -webkit-animation: will 6s ease-in-out both 0.15s infinite;
+  animation: will 6s ease-in-out both 0.15s infinite;
+}
+
+#preloader .thrive span:nth-child(3) {
+  -webkit-animation: thrive 6s ease-in-out both 0.15s infinite;
+  animation: thrive 6s ease-in-out both 0.15s infinite;
+}
+
+#preloader .can span:nth-child(4) {
+  -webkit-animation: can 6s ease-in-out both 0.2s infinite;
+  animation: can 6s ease-in-out both 0.2s infinite;
+}
+
+#preloader .will span:nth-child(4) {
+  -webkit-animation: will 6s ease-in-out both 0.2s infinite;
+  animation: will 6s ease-in-out both 0.2s infinite;
+}
+
+#preloader .thrive span:nth-child(4) {
+  -webkit-animation: thrive 6s ease-in-out both 0.2s infinite;
+  animation: thrive 6s ease-in-out both 0.2s infinite;
+}
+
+#preloader .can span:nth-child(5) {
+  -webkit-animation: can 6s ease-in-out both 0.25s infinite;
+  animation: can 6s ease-in-out both 0.25s infinite;
+}
+
+#preloader .will span:nth-child(5) {
+  -webkit-animation: will 6s ease-in-out both 0.25s infinite;
+  animation: will 6s ease-in-out both 0.25s infinite;
+}
+
+#preloader .thrive span:nth-child(5) {
+  -webkit-animation: thrive 6s ease-in-out both 0.25s infinite;
+  animation: thrive 6s ease-in-out both 0.25s infinite;
+}
+
+#preloader .can span:nth-child(6) {
+  -webkit-animation: can 6s ease-in-out both 0.3s infinite;
+  animation: can 6s ease-in-out both 0.3s infinite;
+}
+
+#preloader .will span:nth-child(6) {
+  -webkit-animation: will 6s ease-in-out both 0.3s infinite;
+  animation: will 6s ease-in-out both 0.3s infinite;
+}
+
+#preloader .thrive span:nth-child(6) {
+  -webkit-animation: thrive 6s ease-in-out both 0.3s infinite;
+  animation: thrive 6s ease-in-out both 0.3s infinite;
+}
+
+#preloader .title {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: auto;
+  overflow: hidden;
+  max-height: 6vw;
+}
+
+#preloader .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 6vw;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 640px) {
+  #preloader .title {
+    font-size: 1.5rem;
+  }
+}
+
+
+.newcards {
+  padding: 8px;
+}
+
+.newcards img {
+  border-radius: 5px;
 }
