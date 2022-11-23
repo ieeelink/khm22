@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Preloader
    */
+  
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove();
+      const x = setTimeout(preloader.remove(),1000);
     });
   }
 

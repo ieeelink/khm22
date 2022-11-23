@@ -249,11 +249,12 @@ section {
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 9999;
   overflow: hidden;
   background: var(--color-secondary);
-  transition: all 0.6s ease-out;
+  /* transition: all 0.6s ease-out; */
   width: 100%;
   height: 100vh;
 }
@@ -262,15 +263,15 @@ section {
 #preloader:after {
   content: "";
   position: absolute;
-  border: 4px solid var(--color-primary);
-  border-radius: 50%;
-  -webkit-animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  /* border: 4px solid var(--color-primary); */
+  /* border-radius: 50%; */
+  /* -webkit-animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; */
+  /* animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; */
 }
 
 #preloader:after {
-  -webkit-animation-delay: -0.5s;
-  animation-delay: -0.5s;
+  /* -webkit-animation-delay: -0.5s; */
+  /* animation-delay: -0.5s; */
 }
 
 @-webkit-keyframes animate-preloader {
@@ -843,10 +844,10 @@ section {
 # Services Section
 --------------------------------------------------------------*/
 .services .card {
-  border: 1px solid rgba(14, 29, 52, 0.15);
-  background: #fff;
+  /* border: 1px solid rgba(14, 29, 52, 0.15); */
+  background: var(--dark);
   position: relative;
-  border-radius: 0;
+  border-radius: 5px;
   height: 100%;
 }
 
@@ -869,7 +870,7 @@ section {
 }
 
 .services .card a {
-  color: #fff;
+  color: var(--white);
   transition: 0.3;
 }
 
@@ -880,7 +881,7 @@ section {
 .services .card p {
   padding: 0 30px;
   margin-bottom: 30px;
-  color: var(--color-secondary);
+  color: var(--secondary-white);
   font-size: 15px;
 }
 
@@ -1846,16 +1847,48 @@ section {
   /* margin-bottom: 20px; */
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
+  line-height: 100%;
   font-size:5rem;
   font-weight: bolder;
   color: var(--white);
   font-family: var(--font-primary);
 }
 
+
+#textanime {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80pt;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    color:var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 7rem;
+    text-align: center;
+    user-select: none;
+}
+
+
 @media (max-width: 575px) {
+  .hero {
+    background: var(--color-secondary);
+  }
   .hero h2 {
     font-size: 3rem;
   }
+  #text1,
+#text2 {
+    font-size: 5rem;
+}
 }
 
 .hero p {
