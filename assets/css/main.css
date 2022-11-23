@@ -1816,7 +1816,7 @@ section {
 .hero p {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   font-family: var(--font-secondary);
 }
 .hero h3 {
