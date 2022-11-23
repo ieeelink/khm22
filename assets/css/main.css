@@ -581,6 +581,14 @@ section {
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+.featured-services {
+  background-color: var(--color-primary);
+}
+.featured-services .service-item p {
+  color: var(--white);
+  
+  transition: 0.3s;
+}
 .featured-services .service-item {
   position: relative;
   height: 100%;
@@ -592,18 +600,11 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #fa5800;
+  color: var(--color-secondary);
   font-size: 48px;
   transition: 0.3s;
 }
 
-.featured-services .service-item:hover .icon {
-  background: #fff;
-}
-
-.featured-services .service-item:hover .icon i {
-  color: var(--color-primary);
-}
 
 .featured-services .service-item .title {
   font-weight: 700;
@@ -634,8 +635,9 @@ section {
 
 .featured-services .service-item:hover .title,
 .featured-services .service-item:hover .readmore,
+.featured-services .service-item:hover p,
 .featured-services .service-item:hover .icon i {
-  color: var(--color-primary);
+  color: var(--white);
 }
 
 /*--------------------------------------------------------------
@@ -892,6 +894,8 @@ section {
 .call-to-action {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
   background-size: cover;
+  background-position: center center;
+  position: relative;
   padding: 100px 0;
 }
 
@@ -1174,7 +1178,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/khm2.jpg") no-repeat;
+  background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1318,6 +1322,12 @@ section {
   font-weight: 500;
   color: var(--color-secondary);
 }
+@media (max-width: 575px){
+  .stats-counter .stats-item {
+    padding: 15px;
+  } 
+}
+
 
 /*--------------------------------------------------------------
 # Our Team Section
@@ -1819,13 +1829,16 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  height: 101vh;
   /* background-color: var(--color-secondary); */
   /* background-image: url("../img/hero-bg.png"); */
   /* background-size: cover; */
   /* background-position: center; */
   position: relative;
   padding: 120px 0 60px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../img/khm1.JPG") center center;
+  background-size: cover;
+  background-position: center center;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1931,13 +1944,7 @@ section {
 /* Header */
 
 .main-title {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-  color: var(--white);
-	text-align: center;
-	top: 0%;
-	left: 0%;
+  text-align: center;
 	/* -webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0); */
 }
@@ -2206,4 +2213,69 @@ section {
   background-color: var(--color-secondary)!important;
   color: var(--white)!important;
   border: 1px solid var(--secondary-white)!important;
+}
+
+/* hero wave  */
+.wave {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('../img/waveYELLOW.png');
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 10;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite!important;
+}
+
+.wave#wave2 {
+  z-index: 9;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 10;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite!important;
+}
+
+.wave#wave4 {
+  z-index: 9;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite!important;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+#herocontent {
+  position: relative;
+  top: 0;
+  left: 0;
 }

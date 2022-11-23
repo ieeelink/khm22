@@ -40,7 +40,7 @@
 </head>
 
 <body>
-<div id="particles-js"></div>
+<!-- <div id="particles-js"></div>-->
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -93,26 +93,29 @@
     
     
  
-    <section id="hero" class="main-title hero d-flex align-items-end">
+    <section id="hero" class="main-title hero d-flex align-items-center">
 
-      <div class="container mb-5">
-        <div class="row gy-4 d-flex p-1 p-md-5">
+      <div class="container wavefront">
+        <ul class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </ul>
+        <div id="herocontent" class="row gy-4 d-flex p-1">
           <div class="col-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <!-- style="font-family: aventurabold;" -->
-            <h2 data-aos="fade-up">KHM<span style="color: var(--color-primary);">‘22</span></h2>
+            <h2 data-aos="fade-up"><span style="color: var(--color-primary);">‘22</span></h2>
             <h3 data-aos="fade-up" data-aos-delay="200"><i class="bi bi-geo-alt-fill"></i> SJCET PALAI &nbsp; <i class="bi bi-calendar"></i></i> DECEMBER 10,11</h3>
             <!-- <h3 data-aos="fade-up" data-aos-delay="200"><i class="bi bi-geo-alt-fill"></i> SJCET PALAI</h3> -->
             <!--p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p-->
             <span><a class="cta-btn-small" href="#featured-services" data-aos="fade-up" data-aos-delay="300">EXPLORE &nbsp; <i
                   class="bi bi-arrow-right"></i></a></span>
-            <!--form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                <input type="text" class="form-control" placeholder="ZIP code or CitY">
-                <button type="submit" class="btn btn-primary">Search</button>
-              </form-->
-    
-            <div class="row gy-4 countdown" data-aos="fade-up" data-aos-delay="400" data-count="2022/12/10">
-    
-              <div class="col-lg-3 col-6 countdown">
+            
+                  
+            <div class="row justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400" data-count="2022/12/10">
+              
+              <div class="col-md-3 col-5 m-0 p-0">
                 <div class="stats-item text-center w-100 h-100">
                   <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span> -->
                   <span>%d</span>
@@ -120,7 +123,7 @@
                 </div>
               </div><!-- End Stats Item -->
     
-              <div class="col-lg-3 col-6">
+              <div class="col-md-3 col-5">
                 <div class="stats-item text-center w-100 h-100">
                   <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
                   <span>%h</span>
@@ -128,7 +131,7 @@
                 </div>
               </div><!-- End Stats Item -->
     
-              <div class="col-lg-3 col-6">
+              <div class="col-md-3 col-5">
                 <div class="stats-item text-center w-100 h-100">
                   <!-- <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span> -->
                   <span>%m</span>
@@ -136,7 +139,7 @@
                 </div>
               </div><!-- End Stats Item -->
     
-              <div class="col-lg-3 col-6">
+              <div class="col-md-3 col-5">
                 <div class="stats-item text-center w-100 h-100">
                   <!-- <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span> -->
                   <span>%s</span>
@@ -154,18 +157,13 @@
 
     </section><!-- End Hero Section -->
   </div>
-  <br>
-
-  <main id="main">
-
-    <!-- ======= Featured Services Section ======= -->
-    <!-- <section id="featured-services" class="featured-services">
+  <section id="featured-services" class="featured-services">
       <div class="container">
 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div class="icon flex-shrink-0 bg-transparent"><i class="fa-solid fa-cart-flatbed"></i></div>
             <div>
               <h4 class="title">Lorem Ipsum</h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
@@ -177,7 +175,7 @@
          
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div class="icon flex-shrink-0 bg-transparent"><i class="fa-solid fa-truck"></i></div>
             <div>
               <h4 class="title">Dolor Sitema</h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -188,7 +186,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div class="icon flex-shrink-0 bg-transparent"><i class="fa-solid fa-truck-ramp-box"></i></div>
             <div>
               <h4 class="title">Sed ut perspiciatis</h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -201,8 +199,11 @@
         </div>
 
       </div>
-    </section>--><!--End Featured Services Section -->
+    </section><!--End Featured Services Section-->
+  <main id="main">
 
+    <!-- ======= Featured Services Section ======= -->
+    
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about pt-0">
       <div class="container" data-aos="fade-up">
