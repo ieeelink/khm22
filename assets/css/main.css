@@ -176,7 +176,7 @@ section {
 }
 
 .breadcrumbs nav {
-  background-color: #f3f6fc;
+  background-color: var(--color-primary);
   padding: 20px 0;
 }
 
@@ -192,7 +192,7 @@ section {
 }
 
 .breadcrumbs nav ol a {
-  color: var(--color-primary);
+  color: white;
   transition: 0.3s;
 }
 
@@ -857,7 +857,7 @@ section {
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 5px 20px;
   border-radius: 30px;
   transition: all 0.5s ease;
   /* border: 2px solid #fff; */
@@ -1093,7 +1093,7 @@ section {
   top: 14px;
   left: 25px;
   font-size: 20px;
-  color: var(--green);
+  color: var(--color-primary);
 }
 
 .faq .accordion-button:after {
