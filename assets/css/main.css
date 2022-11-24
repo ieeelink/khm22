@@ -2579,3 +2579,13 @@ section {
 .newcards img {
   border-radius: 5px;
 }
+
+.spacer{
+  height: 50px;
+}
+
+@media (min-width: 992px) {
+  .spacer{
+    margin-top: 25px;
+  }
+}
