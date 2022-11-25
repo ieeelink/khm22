@@ -22,7 +22,7 @@
   --gradienthover: linear-gradient(to right, #ff7f00 73%, #ff670f 100%);
   --gradientDARK : linear-gradient(to right, #22272c 0%, #22272c 100%);
   --white : #ffffff ;
-  --secondary-white :#fafbfcba;
+  --secondary-white :#fafbfcb1;
   --green :#2dba4e;
   
 
@@ -1068,12 +1068,15 @@ section {
 .gallery-img{
 	-webkit-transform: scale(1);
 	transform: scale(1);
+  position: relative;
+  z-index: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 .gallery-img:hover{
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  z-index: 6;
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .gallery-container{
   /* margin: 1.5rem; */
@@ -1085,12 +1088,12 @@ section {
 }
 
 #glimpse-img:hover{
-  transform: scale(1.1); 
-
+  transform: scale(1.); 
 }
+/*
 .gallery-item {
-  /* padding: 0; */
-}
+  padding: 0;
+} */
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
