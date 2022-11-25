@@ -1069,11 +1069,11 @@ section {
 	transition: .3s ease-in-out;
 }
 .gallery-img:hover{
-	-webkit-transform: scale(1.3);
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 .gallery-container{
-  margin: 2rem;
+  margin: 1.5rem;
   text-align: center;
 }
 #glimpse-img{
@@ -1082,7 +1082,7 @@ section {
 }
 
 #glimpse-img:hover{
-  transform: scale(2); 
+  transform: scale(1.1); 
 
 }
 
