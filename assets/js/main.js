@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (preloader) {
     window.addEventListener('load', () => {
       setTimeout(()=> {preloader.remove();
-      },2000);
+      },5000);
     });
   }
 
