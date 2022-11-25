@@ -1058,6 +1058,33 @@ section {
   align-items: center;
   flex-direction: column;
 }
+.gallery-btn{
+  text-align: center;
+  padding-top: 2rem;
+}
+.gallery-img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery-img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.1);
+}
+.gallery-container{
+  margin: 2rem;
+  text-align: center;
+}
+#glimpse-img{
+  transition: 0.8s ease;
+  border-radius: 8px;
+}
+
+#glimpse-img:hover{
+  transform: scale(2); 
+
+}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
