@@ -1048,6 +1048,17 @@ section {
   }
 }
 
+/*--------Gallery Section--------------------------*/
+.section-head {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
