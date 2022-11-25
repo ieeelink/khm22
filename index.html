@@ -30,6 +30,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#footerComp").load("./otherHTML/footer.html"); 
+    });
+    </script> 
 </head>
 
 <body>
@@ -640,16 +646,15 @@
 
       <div class="gallery-isotope">
           <div class="row gallery-container align-items-center justify-content-center">
-            <div class=" col-md-4 col-sm-6 gallery-item filter-remodeling">
-            
-              <div class="gallery-content h-100">
-                <img src="/assets/img/khm20-img8.JPG" class="img-fluid" id="glimpse-img" altalt="">
-                <div class="gallery-info">
-                  <h4></h4>
-
-                </div>
+              <div class=" col-md-4 col-sm-6 gallery-item filter-remodeling">
+                  <div class="gallery-content h-100">
+                      <img src="assets/img/khm20-img1.JPG" class="img-fluid" id="glimpse-img"alt="">
+                      <div class="gallery-info">
+                          <h4></h4>
+                          
+                      </div>
+                  </div>
               </div>
-            </div>
               <div class=" col-md-4 col-sm-6 gallery-item filter-remodeling">
                   <div class="gallery-content h-100">
                       <img src="assets/img/khm20-img1.JPG" class="img-fluid" id="glimpse-img"alt="">
@@ -687,6 +692,7 @@
                   </div>
               </div>
               <div class=" col-md-4 col-sm-6 gallery-item filter-remodeling">
+                  
                   <div class="gallery-content h-100">
                       <img src="/assets/img/khm20-img7.JPG" class="img-fluid" id="glimpse-img"altalt="">
                       <div class="gallery-info">
@@ -697,7 +703,7 @@
               </div>              
           </div>
           <div class="gallery-btn">
-          <a class="get-a-quote cta-btn-small fw-bold text-white" href="gallery.html">Know More&nbsp;<i class="bi bi-chevron-right"></i></a></li>
+          <a class="get-a-quote cta-btn-small fw-bold text-white" href="gallery.html">View More &nbsp; <i class="bi bi-chevron-right"></i></a></li>
         </div>
         </div>
 
@@ -847,7 +853,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+  <!-- <footer id="footer" class="footer">
 
     <div class="container">
       <div class="row gy-4">
@@ -859,12 +865,12 @@
             Branches all
             across the Hub to connect, network, and learn together.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-discord"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
+            <a href="https://twitter.com/ieeesbsjcet" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/ieeesbsjcet" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/ieeesbsjcet/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ieeesbsjcet/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-discord"></i></a> 
+            <a href="https://www.youtube.com/@IEEESBSJCET" class="linkedin"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -909,7 +915,8 @@
       </div>
     </div>
 
-  </footer><!-- End Footer -->
+  </footer> -->
+  <div id="footerComp"></div><!-- End Footer -->
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
