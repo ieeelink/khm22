@@ -1,9 +1,4 @@
-/**
-* Template Name: Logis - v1.2.1
-* Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -15,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (preloader) {
     window.addEventListener('load', () => {
       setTimeout(()=> {preloader.remove();
-      },5000);
+      },3000);
     });
   }
 

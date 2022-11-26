@@ -22,7 +22,7 @@
   --gradienthover: linear-gradient(to right, #ff7f00 73%, #ff670f 100%);
   --gradientDARK : linear-gradient(to right, #22272c 0%, #22272c 100%);
   --white : #ffffff ;
-  --secondary-white :#fafbfcc4;
+  --secondary-white :#fafbfcb1;
   --green :#2dba4e;
   
 
@@ -40,6 +40,9 @@ body {
   font-family: var(--font-default);
   color: var(--secondary-white);
   background-color: var(--color-secondary);
+    /* background-image: url("../img/counterpatter.png");
+  background-repeat: repeat;
+  background-size: 100vw; */
 }
 
 a {
@@ -95,7 +98,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #fff;
+  color: var(--white);
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
@@ -188,7 +191,7 @@ section {
   padding: 0;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--white);
 }
 
 .breadcrumbs nav ol a {
@@ -873,7 +876,7 @@ section {
 }
 
 .cta-btn-small{
-  padding: 8px 30px!important;
+  padding: 8px 20px!important;
   font-size: 13px!important;
 }
 
@@ -1058,6 +1061,39 @@ section {
   align-items: center;
   flex-direction: column;
 }
+.gallery-btn{
+  text-align: center;
+  padding-top: 2rem;
+}
+.gallery-img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  position: relative;
+  z-index: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery-img:hover{
+  z-index: 6;
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.gallery-container{
+  /* margin: 1.5rem; */
+  text-align: center;
+}
+#glimpse-img{
+  transition: 0.8s ease;
+  /* border-radius: 8px; */
+}
+
+#glimpse-img:hover{
+  transform: scale(1.); 
+}
+/*
+.gallery-item {
+  padding: 0;
+} */
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
@@ -1777,16 +1813,12 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  /* background-color: var(--color-secondary); */
-  /* background-image: url("../img/hero-bg.png"); */
-  /* background-size: cover; */
-  /* background-position: center; */
+  background-color: var(--color-secondary);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/khm2020crop.JPG") center center; 
+  background-size: cover;
+  background-position: center;
   position: relative;
   padding: 120px 0 60px 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../img/khm1.JPG") center center; */
-  background: var(--color-secondary);
-  background-size: cover;
-  background-position: center center;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1816,7 +1848,7 @@ section {
 }
 @media (max-width: 575px) {
   .hero {
-    background: var(--color-secondary);
+    /* background: var(--color-secondary); */
   }
 
   .hero h2 {
@@ -2597,6 +2629,6 @@ section {
 
 @media (min-width: 992px) {
   .spacer{
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
