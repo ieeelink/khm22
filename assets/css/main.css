@@ -2632,3 +2632,7 @@ section {
     margin-top: 35px;
   }
 }
+
+.withheart span {
+  color: rgb(80, 112, 255);
+}
