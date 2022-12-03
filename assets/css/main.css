@@ -40,9 +40,9 @@ body {
   font-family: var(--font-default);
   color: var(--secondary-white);
   background-color: var(--color-secondary);
-    /* background-image: url("../img/counterpatter.png");
-  background-repeat: repeat;
-  background-size: 100vw; */
+    /* background-image: url("http://192.168.225.223:12345/TempHTTP/Waves2.png");
+    background-position:center;
+  background-repeat: repeat-y; */
 }
 
 a {
@@ -195,7 +195,7 @@ section {
 }
 
 .breadcrumbs nav ol a {
-  color: white;
+  color: var(--dark);
   transition: 0.3s;
 }
 
@@ -210,7 +210,7 @@ section {
 .breadcrumbs nav ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #4278cc;
+  color: var(--dark);
   content: "/";
 }
 
@@ -2080,7 +2080,7 @@ section {
 
 .timeline .wrapper {
   background: var(--dark);
-  padding: 2rem;
+  padding: 2rem .5rem 2rem .1rem;
   width: 100%;
   border-radius: 5px;
 }
@@ -2108,7 +2108,8 @@ section {
     
 }
 
-.timeline li:last-child {
+.timeline li:last-child,
+.timeline li > ul > li {
   border: 0px;
   padding-bottom: 0;
 }
@@ -2145,12 +2146,17 @@ section {
     font-size: 0.85rem;
   }
 }
+.timeline ul li ul {
+  padding-left: .8rem;
+  margin: 2rem 0 0.8rem 0;
+}
 
 .timeline p {
   color: var(--secondary-white);
   font-family: sans-serif;
   line-height: 1.5;
   margin-top: 0.4rem;
+  margin: 0.4rem 0 0rem 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -2635,4 +2641,83 @@ section {
 
 .withheart span {
   color: rgb(80, 112, 255);
+}
+
+/* ==== EVENT INTRO SECTION ==== */
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: var(--dark);
+  padding: .8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.eventGrid>div>.card-img-overlay {
+  transition: 0.3s;
+}
+
+.eventGrid>div>.card-img-overlay>a,
+.eventGrid>div>.card-img-overlay>p {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin: auto;
+  visibility: hidden;
+  font-size: 0px;
+  transition: 0.4s;
+}
+
+.eventGrid div {
+  border: none;
+  background-color: transparent;
+}
+
+.eventGrid div img {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0.5rem;
+  transition: 0.25s;
+}
+
+.eventGrid>div:hover>.card-img-overlay>a,
+.eventGrid>div:hover>.card-img-overlay>p,
+.eventGrid>div:active>.card-img-overlay>a,
+.eventGrid>div:active>.card-img-overlay>p,
+.eventGrid>div:focus>.card-img-overlay>a,
+.eventGrid>div:focus>.card-img-overlay>p {
+  visibility: visible;
+  font-size: 1rem;
+}
+
+.eventGrid div:hover img {
+  transform: scale(1.02);
+  border: .5px solid var(--white);
+}
+
+.eventGrid .Event1 {
+  flex: 1;
+  grid-area: 1/1/3/3;
+}
+
+.eventGrid .Event2 {
+  flex: 1;
+  grid-area: 1/3/2/4;
+}
+
+.eventGrid .Event3 {
+  flex: 1;
+  grid-area: 2/3/3/4;
+}
+
+.eventGrid .Event4 {
+  flex: 1;
+  grid-area: 1/4/2/5;
+}
+
+.eventGrid .Event5 {
+  flex: 1;
+  grid-area: 2/4/3/5;
 }
