@@ -2694,7 +2694,7 @@ section {
 
 .eventGrid div:hover img {
   transform: scale(1.02);
-  border: .5px solid var(--white);
+  /* border: .5px solid var(--white); */
 }
 
 .eventGrid .Event1 {
