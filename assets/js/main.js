@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			setTimeout(() => {
 				preloader.remove();
 				document.getElementsByTagName("body")[0].style.overflowY = "auto";
-			}, 1800);
+			}, 1000);
 		});
 	}
 
