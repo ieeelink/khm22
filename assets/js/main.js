@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (preloader) {
     window.addEventListener('load', () => {
       setTimeout(()=> {preloader.remove();
-      },2400);
+      },1800);
     });
   }
 
