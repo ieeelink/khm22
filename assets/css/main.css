@@ -797,8 +797,8 @@ section {
 
 .services .card .card-img img {
   transition: 0.3s ease-in-out;
-  height: 350px;
-  width: 400px;
+  height: 25rem
+  width: 21rem;
 }
 
 .services .card h3 {
