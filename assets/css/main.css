@@ -150,6 +150,21 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Coming soon text
+--------------------------------------------------------------*/
+.coming-soon-text {
+  background: var(--gradient);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs .page-header {
