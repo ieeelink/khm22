@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
       setTimeout(() => {
         preloader.remove();
-      }, 1800);
+      },1800);
     });
   }
 
