@@ -1004,6 +1004,35 @@ section {
   font-size: 13px!important;
 }
 
+
+
+.cta-btnn-small,
+ .cta-btnn {
+  font-family: var(--font-primary);
+  font-weight: 500!important;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  /* border: 2px solid #fff; */
+  color: var(--white);
+  background-color: red;
+  /* border: 2px solid var(--color-primary); */
+}
+.cta-btnn-small:hover,
+ .cta-btnn:hover {
+  background-color: red;
+  /* border: 2px solid var(--color-primary); */
+  color: var(--white);
+}
+
+.cta-btnn-small{
+  padding: 8px 20px!important;
+  font-size: 13px!important;
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -2224,7 +2253,7 @@ section {
 .timeline li {
   padding: 0;
   padding-bottom: 1.5rem;
-  border-left: 1px solid var(--green);
+  border-left: 1px solid var(--color-primary);
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
@@ -2242,7 +2271,7 @@ section {
   content: "";
   width: 15px;
   height: 15px;
-  background: var(--green);
+  background: var(--color-primary);
   /* border: 1px solid #4e5ed3; */
   /* box-shadow: 3px 3px 0px #bab5f8; */
   /* box-shadow: 3px 3px 0px #bab5f8; */
