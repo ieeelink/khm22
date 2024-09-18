@@ -9,12 +9,15 @@
   --font-secondary: "Poppins", sans-serif;
   --herofont : 'Cookie', cursive;
   --khm : "axisextra_bold";
+  --leap_font: "leap"
 }
 
 /* Colors */
 :root {
+  --nav-color:rgba(54, 213, 174, 1);
   --color-default: #69D6BF;
-  --color-primary: #FFE855;
+  --color-primary: #efa136;
+  --color-higlight:#f2db53;
   --color-secondary: #181118;
   --dark : #22272c;
   --color-third :#C41545;
@@ -27,6 +30,8 @@
   
 
 }
+
+
 
 /* Smooth scroll behavior */
 :root {
@@ -69,6 +74,13 @@ h6 {
   font-family: "aventurabold";
   src: url("assets/font/aventura-bold-webfont.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "leap";
+  src: url("assets/font/Leap.otf") format("otf");
+  font-weight: bolder;
   font-style: normal;
 }
 
@@ -433,9 +445,9 @@ section {
     justify-content: space-between;
     padding: 10px 30px 10px 0px;
     font-family: var(--font-primary);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--nav-color) ;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -1968,7 +1980,7 @@ section {
   width: 100%;
   height: 100vh;
   background-color: var(--color-secondary);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/khm1night.jpg") center center; 
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/khm24/khmGp.png") center center; 
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1985,7 +1997,7 @@ section {
   font-size:5rem;
   font-weight: bolder;
   color: var(--white);
-  font-family: var(--font-primary);
+  font-family: var(--leap_font);
 }
 
 .hero p {
@@ -2790,6 +2802,20 @@ section {
 @media (min-width: 992px) {
   .spacer{
     margin-top: 35px;
+  }
+
+  #herocontent div p:first-child(){
+  
+    font-size: 40px;
+
+
+  }
+  #herocontent div p{ 
+    font-size: 32px;
+  }
+  #herocontent div h2{ 
+    font-size: 100px;
+  
   }
 }
 
