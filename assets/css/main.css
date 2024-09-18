@@ -967,7 +967,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/ajceaerial.jpeg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/khm24/asiet.jpg") center center;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -2360,7 +2360,7 @@ section {
   left: 0;
   width: 100%;
   height: 95px;
-  background: url('../img/waveYELLOW24.png');
+  background: url('../img/waveORANGE24.png');
     background-size: 1000px 100px;
 }
 
