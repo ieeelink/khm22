@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;600;700&display=swap');
 
+@font-face {
+  font-family: 'Leap';
+  src: url('/assets/font/Leap.otf') format('opentype');
+}
+
 
 
 /* Fonts */
@@ -656,6 +661,7 @@ section {
 --------------------------------------------------------------*/
 .featured-services {
   background-color: var(--color-primary);
+  height: fit-content;
 }
 .featured-services .service-item p {
   color: var(--white);
@@ -1984,7 +1990,7 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 80px 0 60px 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2013,9 +2019,9 @@ section {
   font-family: var(--font-primary);
 }
 @media (max-width: 575px) {
-  .hero {
-    /* background: var(--color-secondary); */
-  }
+  /* .hero {
+    background: var(--color-secondary);
+  } */
 
   .hero h2 {
     margin-bottom: 20px;
@@ -2806,15 +2812,16 @@ section {
 
   #herocontent div p:first-child(){
   
-    font-size: 40px;
+    font-size: 4vh;
 
 
   }
   #herocontent div p{ 
-    font-size: 32px;
+    font-size: 3vh;
   }
   #herocontent div h2{ 
-    font-size: 100px;
+    font-size: 9vh;
+    font-family:'Leap';
   
   }
 }
